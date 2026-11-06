@@ -1,0 +1,4 @@
+# Fins de ligne Unix dans le dépôt (les fichiers sont exécutés sur la VM Linux)
+* text=auto eol=lf
+*.png binary
+*.jpg binary

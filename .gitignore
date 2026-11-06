@@ -1,0 +1,14 @@
+# Configuration locale (clé TMDB)
+.env
+
+# Fichier de données réel et fichiers techniques du stockage
+donnees/videotheque.json
+donnees/*.lock
+donnees/.videotheque-*.tmp
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/

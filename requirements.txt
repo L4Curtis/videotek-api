@@ -1,0 +1,7 @@
+# Dépendances de l'API (déjà installées dans l'image videotek-flask:1.0)
+flask==3.1.3
+requests==2.34.2
+bcrypt==5.0.0
+tzdata==2026.6
+# tests
+pytest==9.2.0

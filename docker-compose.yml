@@ -1,0 +1,27 @@
+# API seule, pour la développer et la tester (curl, Postman, script Python)
+# sur le port 5001 de la VM.
+#
+#   cp .env.example .env
+#   docker compose up -d --build
+#   curl http://localhost:5001/api
+#
+# L'application complète (api + serveur web) se lance depuis le repo
+# videotek-serveur, cloné à côté de celui-ci. Les deux fichiers compose
+# publient le port 5001 : n'en lancer qu'un à la fois.
+name: videotek-api
+
+services:
+  api:
+    build: .
+    image: videotek-flask:1.0
+    env_file: .env          # VIDEOTHEQUE_FICHIER, TMDB_CLE
+    ports:
+      - "5001:5000"
+    volumes:
+      - .:/app              # code du projet, partagé avec l'hôte
+      - donnees:/donnees    # fichier JSON de production
+    restart: unless-stopped
+
+volumes:
+  donnees:
+    name: videotek_donnees  # même volume que le compose global
