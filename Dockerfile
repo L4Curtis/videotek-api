@@ -7,8 +7,11 @@
 # est donc vide (.dockerignore).
 FROM python:3.12-slim
 
+# Les variables du fichier .env sont passées par docker compose (env_file) :
+# Flask n'a pas à le relire (FLASK_SKIP_DOTENV).
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
+    FLASK_SKIP_DOTENV=1 \
     TZ=Europe/Paris
 
 # Python 3 + Flask (+ requests, bcrypt), tzdata pour le fuseau horaire,
