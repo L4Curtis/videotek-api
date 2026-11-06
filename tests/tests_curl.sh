@@ -24,11 +24,11 @@ appel() {
   code=$(curl "${options[@]}")
   if [[ "|$attendus|" == *"|$code|"* ]]; then
     REUSSIS=$((REUSSIS + 1))
-    printf '  \033[32m✓\033[0m %-6s %-48s %s\n' "$methode" "$chemin" "$code"
+    printf '  \033[32m✓\033[0m %-6s %-48s %s\n' "$methode" "${chemin:-/}" "$code"
   else
     ECHECS=$((ECHECS + 1))
     printf '  \033[31m✗\033[0m %-6s %-48s %s (attendu %s) %s\n' \
-      "$methode" "$chemin" "$code" "$attendus" "$(head -c 200 "$CORPS")"
+      "$methode" "${chemin:-/}" "$code" "$attendus" "$(head -c 200 "$CORPS")"
   fi
   CODE=$code
 }
