@@ -15,14 +15,14 @@ dans le repo [videotek-serveur](https://github.com/L4Curtis/videotek-serveur).
 ```mermaid
 flowchart LR
     nav["Navigateur<br/>(tiers client)"] -->|"HTTP :5000<br/>pages HTML"| srv
-    subgraph vm["VM RemoteLabz : hôte Docker"]
-        subgraph net["réseau Docker videotheque_net (bridge)"]
+    subgraph vm["VM RemoteLabz (hôte Docker)"]
+        subgraph net["réseau videotheque_net"]
             srv["Conteneur serveur<br/>Flask + Jinja<br/>(tiers présentation)"]
             api["Conteneur api<br/>API REST Flask<br/>(tiers données)"]
         end
         json[("videotheque.json<br/>volume Docker")]
     end
-    srv -->|"HTTP REST + JSON<br/>http://api:5000/api"| api
+    srv -->|"HTTP REST + JSON<br/>api:5000/api"| api
     api -->|"lecture / écriture<br/>sous verrou"| json
     api -->|"HTTPS :443<br/>clé d'API"| tmdb["API TMDB<br/>(service externe)"]
     tests["curl · Postman · pytest"] -.->|"HTTP :5001<br/>tests uniquement"| api
