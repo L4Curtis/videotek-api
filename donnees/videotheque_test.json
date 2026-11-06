@@ -1,0 +1,619 @@
+{
+  "utilisateurs": [
+    {
+      "id": 1,
+      "nom_utilisateur": "admin",
+      "prenom": "Admin",
+      "nom": "Vidéotek",
+      "email": "admin@videotek.local",
+      "annee_naissance": 1990,
+      "mot_de_passe": "$2b$12$TaBgHLsFa8x5uTyIEaR3gO9Ry7VbiaRoMtwYMfpseRbwp1bDffB6q",
+      "role": "administrateur",
+      "bloque": false,
+      "liste_envies": [],
+      "films_vus": [
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "nom_utilisateur": "alice",
+      "prenom": "Alice",
+      "nom": "Martin",
+      "email": "alice@exemple.fr",
+      "annee_naissance": 2003,
+      "mot_de_passe": "$2b$12$FdicxGZIGZ/KYhcFE9O72eaUQa6qm4mE6uxPqeBls0DQBusC1O.KK",
+      "role": "utilisateur",
+      "bloque": false,
+      "liste_envies": [
+        3,
+        7
+      ],
+      "films_vus": [
+        1,
+        4,
+        6
+      ]
+    },
+    {
+      "id": 3,
+      "nom_utilisateur": "bob",
+      "prenom": "Bob",
+      "nom": "Durand",
+      "email": "bob@exemple.fr",
+      "annee_naissance": 2001,
+      "mot_de_passe": "$2b$12$/9o6xxeVfVhZfA2lMKOFp.TyLMK6WatXVpZvyEqwMYQ.VdbBZa9KK",
+      "role": "utilisateur",
+      "bloque": false,
+      "liste_envies": [
+        12
+      ],
+      "films_vus": [
+        2,
+        8,
+        10
+      ]
+    },
+    {
+      "id": 4,
+      "nom_utilisateur": "chloe",
+      "prenom": "Chloé",
+      "nom": "Bernard",
+      "email": "chloe@exemple.fr",
+      "annee_naissance": 1999,
+      "mot_de_passe": "$2b$12$Do/B2C.2sI/winv8NNIRJONvaSmt6yIYOBCWJun.mnBmhBpAB0XJ.",
+      "role": "utilisateur",
+      "bloque": true,
+      "liste_envies": [],
+      "films_vus": [
+        7
+      ]
+    }
+  ],
+  "films": [
+    {
+      "id": 1,
+      "titre": "Inception",
+      "categories": [
+        1,
+        10,
+        2
+      ],
+      "annee": 2010,
+      "acteurs": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Elliot Page",
+        "Tom Hardy",
+        "Marion Cotillard"
+      ],
+      "description": "Un spécialiste du vol de secrets dans les rêves se voit confier la mission inverse : implanter une idée dans l'esprit d'un héritier.",
+      "affiche": null,
+      "tmdb_id": 27205,
+      "date_ajout": "2026-09-02"
+    },
+    {
+      "id": 2,
+      "titre": "Matrix",
+      "categories": [
+        1,
+        10
+      ],
+      "annee": 1999,
+      "acteurs": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss",
+        "Hugo Weaving"
+      ],
+      "description": "Un programmeur découvre que le monde qu'il connaît est une simulation et rejoint une poignée de rebelles.",
+      "affiche": null,
+      "tmdb_id": 603,
+      "date_ajout": "2026-09-02"
+    },
+    {
+      "id": 3,
+      "titre": "Interstellar",
+      "categories": [
+        2,
+        6,
+        10
+      ],
+      "annee": 2014,
+      "acteurs": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain",
+        "Michael Caine"
+      ],
+      "description": "Alors que la Terre se meurt, un ancien pilote part à travers un trou de ver chercher une planète habitable.",
+      "affiche": null,
+      "tmdb_id": 157336,
+      "date_ajout": "2026-09-10"
+    },
+    {
+      "id": 4,
+      "titre": "Le Fabuleux Destin d'Amélie Poulain",
+      "categories": [
+        4,
+        9
+      ],
+      "annee": 2001,
+      "acteurs": [
+        "Audrey Tautou",
+        "Mathieu Kassovitz",
+        "Rufus",
+        "Yolande Moreau"
+      ],
+      "description": "Une jeune serveuse de Montmartre décide de faire le bonheur des gens qui l'entourent, en oubliant un peu le sien.",
+      "affiche": null,
+      "tmdb_id": null,
+      "date_ajout": "2026-09-15"
+    },
+    {
+      "id": 5,
+      "titre": "Intouchables",
+      "categories": [
+        4,
+        6
+      ],
+      "annee": 2011,
+      "acteurs": [
+        "François Cluzet",
+        "Omar Sy",
+        "Anne Le Ny",
+        "Audrey Fleurot"
+      ],
+      "description": "Un aristocrate tétraplégique engage comme aide à domicile un jeune de banlieue que rien ne prédestinait à ce travail.",
+      "affiche": null,
+      "tmdb_id": null,
+      "date_ajout": "2026-09-15"
+    },
+    {
+      "id": 6,
+      "titre": "Le Voyage de Chihiro",
+      "categories": [
+        3,
+        7,
+        8
+      ],
+      "annee": 2001,
+      "acteurs": [
+        "Rumi Hiiragi",
+        "Miyu Irino",
+        "Mari Natsuki"
+      ],
+      "description": "Égarée dans un monde peuplé d'esprits, une fillette doit travailler dans un établissement de bains pour sauver ses parents.",
+      "affiche": null,
+      "tmdb_id": 129,
+      "date_ajout": "2026-09-28"
+    },
+    {
+      "id": 7,
+      "titre": "Parasite",
+      "categories": [
+        4,
+        11,
+        6
+      ],
+      "annee": 2019,
+      "acteurs": [
+        "Song Kang-ho",
+        "Lee Sun-kyun",
+        "Cho Yeo-jeong",
+        "Choi Woo-shik"
+      ],
+      "description": "Une famille sans le sou s'infiltre, un membre après l'autre, au service d'une riche famille de Séoul.",
+      "affiche": null,
+      "tmdb_id": 496243,
+      "date_ajout": "2026-10-05"
+    },
+    {
+      "id": 8,
+      "titre": "Retour vers le futur",
+      "categories": [
+        2,
+        4,
+        10
+      ],
+      "annee": 1985,
+      "acteurs": [
+        "Michael J. Fox",
+        "Christopher Lloyd",
+        "Lea Thompson",
+        "Crispin Glover"
+      ],
+      "description": "Propulsé en 1955 à bord d'une voiture transformée en machine à voyager dans le temps, un lycéen doit réunir ses futurs parents.",
+      "affiche": null,
+      "tmdb_id": 105,
+      "date_ajout": "2026-10-12"
+    },
+    {
+      "id": 9,
+      "titre": "Le Roi lion",
+      "categories": [
+        3,
+        7,
+        6
+      ],
+      "annee": 1994,
+      "acteurs": [
+        "Matthew Broderick",
+        "James Earl Jones",
+        "Jeremy Irons",
+        "Nathan Lane"
+      ],
+      "description": "Chassé de la terre des lions après la mort de son père, un jeune lionceau doit grandir avant de reprendre sa place.",
+      "affiche": null,
+      "tmdb_id": 8587,
+      "date_ajout": "2026-10-20"
+    },
+    {
+      "id": 10,
+      "titre": "Pulp Fiction",
+      "categories": [
+        11,
+        5
+      ],
+      "annee": 1994,
+      "acteurs": [
+        "John Travolta",
+        "Samuel L. Jackson",
+        "Uma Thurman",
+        "Bruce Willis"
+      ],
+      "description": "Plusieurs histoires de truands de Los Angeles s'entremêlent autour d'une mallette mystérieuse.",
+      "affiche": null,
+      "tmdb_id": 680,
+      "date_ajout": "2026-10-27"
+    },
+    {
+      "id": 11,
+      "titre": "The Dark Knight : Le Chevalier noir",
+      "categories": [
+        1,
+        5,
+        6
+      ],
+      "annee": 2008,
+      "acteurs": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart",
+        "Gary Oldman"
+      ],
+      "description": "Batman affronte le Joker, un criminel imprévisible décidé à plonger Gotham dans le chaos.",
+      "affiche": null,
+      "tmdb_id": 155,
+      "date_ajout": "2026-11-02"
+    },
+    {
+      "id": 12,
+      "titre": "Le Seigneur des anneaux : La Communauté de l'anneau",
+      "categories": [
+        2,
+        8,
+        1
+      ],
+      "annee": 2001,
+      "acteurs": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen",
+        "Sean Astin"
+      ],
+      "description": "Un jeune hobbit hérite d'un anneau au pouvoir terrible et part avec huit compagnons pour le détruire.",
+      "affiche": null,
+      "tmdb_id": 120,
+      "date_ajout": "2026-11-04"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "nom": "Action"
+    },
+    {
+      "id": 2,
+      "nom": "Aventure"
+    },
+    {
+      "id": 3,
+      "nom": "Animation"
+    },
+    {
+      "id": 4,
+      "nom": "Comédie"
+    },
+    {
+      "id": 5,
+      "nom": "Crime"
+    },
+    {
+      "id": 6,
+      "nom": "Drame"
+    },
+    {
+      "id": 7,
+      "nom": "Familial"
+    },
+    {
+      "id": 8,
+      "nom": "Fantastique"
+    },
+    {
+      "id": 9,
+      "nom": "Romance"
+    },
+    {
+      "id": 10,
+      "nom": "Science-Fiction"
+    },
+    {
+      "id": 11,
+      "nom": "Thriller"
+    }
+  ],
+  "supports": [
+    {
+      "id": 1,
+      "film_id": 1,
+      "type": "physique",
+      "format": "Blu-ray",
+      "disponible": false,
+      "lien": null
+    },
+    {
+      "id": 2,
+      "film_id": 1,
+      "type": "physique",
+      "format": "DVD",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 3,
+      "film_id": 1,
+      "type": "numérique",
+      "format": "MKV",
+      "disponible": true,
+      "lien": "https://media.videotek.local/films/inception.mkv"
+    },
+    {
+      "id": 4,
+      "film_id": 2,
+      "type": "physique",
+      "format": "DVD",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 5,
+      "film_id": 2,
+      "type": "numérique",
+      "format": "MP4",
+      "disponible": true,
+      "lien": "https://media.videotek.local/films/matrix.mp4"
+    },
+    {
+      "id": 6,
+      "film_id": 3,
+      "type": "physique",
+      "format": "Blu-ray",
+      "disponible": false,
+      "lien": null
+    },
+    {
+      "id": 7,
+      "film_id": 3,
+      "type": "physique",
+      "format": "Blu-ray",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 8,
+      "film_id": 4,
+      "type": "physique",
+      "format": "DVD",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 9,
+      "film_id": 5,
+      "type": "physique",
+      "format": "DVD",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 10,
+      "film_id": 5,
+      "type": "numérique",
+      "format": "MP4",
+      "disponible": true,
+      "lien": "https://media.videotek.local/films/intouchables.mp4"
+    },
+    {
+      "id": 11,
+      "film_id": 6,
+      "type": "physique",
+      "format": "Blu-ray",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 12,
+      "film_id": 7,
+      "type": "physique",
+      "format": "Blu-ray",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 13,
+      "film_id": 8,
+      "type": "physique",
+      "format": "DVD",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 14,
+      "film_id": 8,
+      "type": "physique",
+      "format": "Blu-ray",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 15,
+      "film_id": 9,
+      "type": "physique",
+      "format": "DVD",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 16,
+      "film_id": 10,
+      "type": "physique",
+      "format": "DVD",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 17,
+      "film_id": 11,
+      "type": "physique",
+      "format": "Blu-ray",
+      "disponible": true,
+      "lien": null
+    },
+    {
+      "id": 18,
+      "film_id": 11,
+      "type": "numérique",
+      "format": "MKV",
+      "disponible": true,
+      "lien": "https://media.videotek.local/films/the-dark-knight.mkv"
+    },
+    {
+      "id": 19,
+      "film_id": 12,
+      "type": "physique",
+      "format": "DVD",
+      "disponible": true,
+      "lien": null
+    }
+  ],
+  "emprunts": [
+    {
+      "id": 1,
+      "utilisateur_id": 2,
+      "support_id": 11,
+      "date_emprunt": "2026-09-10",
+      "date_retour_prevue": "2026-09-24",
+      "date_retour_effective": "2026-09-20"
+    },
+    {
+      "id": 2,
+      "utilisateur_id": 3,
+      "support_id": 13,
+      "date_emprunt": "2026-10-01",
+      "date_retour_prevue": "2026-10-15",
+      "date_retour_effective": "2026-10-12"
+    },
+    {
+      "id": 3,
+      "utilisateur_id": 3,
+      "support_id": 6,
+      "date_emprunt": "2026-10-20",
+      "date_retour_prevue": "2026-11-03",
+      "date_retour_effective": null
+    },
+    {
+      "id": 4,
+      "utilisateur_id": 2,
+      "support_id": 1,
+      "date_emprunt": "2026-11-01",
+      "date_retour_prevue": "2026-11-15",
+      "date_retour_effective": null
+    }
+  ],
+  "avis": [
+    {
+      "id": 1,
+      "utilisateur_id": 2,
+      "film_id": 1,
+      "note": 5,
+      "commentaire": "Un scénario vertigineux, à revoir pour tout comprendre.",
+      "date": "2026-09-05"
+    },
+    {
+      "id": 2,
+      "utilisateur_id": 2,
+      "film_id": 4,
+      "note": 4,
+      "commentaire": "Plein de poésie, la bande originale est superbe.",
+      "date": "2026-09-18"
+    },
+    {
+      "id": 3,
+      "utilisateur_id": 2,
+      "film_id": 6,
+      "note": 5,
+      "commentaire": "Magnifique, aussi bien pour les enfants que pour les adultes.",
+      "date": "2026-09-21"
+    },
+    {
+      "id": 4,
+      "utilisateur_id": 3,
+      "film_id": 1,
+      "note": 4,
+      "commentaire": null,
+      "date": "2026-09-07"
+    },
+    {
+      "id": 5,
+      "utilisateur_id": 3,
+      "film_id": 2,
+      "note": 5,
+      "commentaire": "Un classique de la science-fiction.",
+      "date": "2026-09-08"
+    },
+    {
+      "id": 6,
+      "utilisateur_id": 3,
+      "film_id": 8,
+      "note": 4,
+      "commentaire": "Toujours aussi drôle.",
+      "date": "2026-10-13"
+    },
+    {
+      "id": 7,
+      "utilisateur_id": 3,
+      "film_id": 10,
+      "note": 3,
+      "commentaire": "Culte, mais les dialogues sont parfois longs.",
+      "date": "2026-10-30"
+    },
+    {
+      "id": 8,
+      "utilisateur_id": 1,
+      "film_id": 3,
+      "note": 5,
+      "commentaire": "Visuellement impressionnant.",
+      "date": "2026-09-12"
+    },
+    {
+      "id": 9,
+      "utilisateur_id": 4,
+      "film_id": 7,
+      "note": 4,
+      "commentaire": "Une critique sociale très habile.",
+      "date": "2026-10-08"
+    }
+  ]
+}
